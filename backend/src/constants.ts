@@ -1,4 +1,11 @@
-const bonds = [
+export const MARKET_DATA = {
+  MEP: 1320.0,
+  OFFICIAL: 950.0,
+  FUTURE: 1550.0,
+  REM_INFLATION: 0.11, // TEM 11%
+};
+
+export const BONDS = [
   {
     symbol: 'TX26',
     price: 1350.5,
@@ -16,12 +23,8 @@ const bonds = [
   {
     symbol: 'AL30',
     price: 68500.0,
-    technicalValue: 130000.0, // Assuming 100 USD at 1300 MEP
+    technicalValue: 130000.0,
     duration: 2.8,
     daysToMaturity: 2190,
   }
 ];
-
-const mepRate = 1320.0;
-
-module.exports = { bonds, mepRate };
